@@ -1,0 +1,110 @@
+html, body{
+    font-family: 'Lato';
+    margin: 0px;
+    padding: 0px;
+}
+.button-add{
+    background-color:#0000ff;
+    margin-left: 4px;
+}
+
+.Superior {
+    text-align: center; /* Para textos e elementos inline */
+    background-color: #1b7344d8; /* Cor de fundo do cabeçalho */
+    color : white;
+    padding: 10px;
+}
+
+.content-add-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.input-add{
+    width: auto;
+    height: 100%;
+    border: none;
+    padding: 3px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content {
+    margin:  auto; /* Para elementos de bloco como div */
+    width: 80%; /* Ou a largura que você preferir */
+}
+
+.container-colunas {
+    display: flex;
+    height: 100vh; /* Altura total da página */
+}
+
+.coluna {
+    flex: 1;
+    background-color: #f8f8f8; /* Cor de fundo para a tarefa */
+    margin: 10px; /* Espaçamento em torno de cada tarefa */
+    padding: 15px; /* Espaçamento interno na tarefa */
+    border: 1px solid #ddd; /* Borda para a tarefa */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para efeito 3D */
+    
+}
+
+.titulo-coluna {
+    padding: 10px;
+    border-bottom: 1px solid black; /* Linha abaixo do título */
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.titulo-pendente{
+    color: rgb(179, 179, 23);
+}
+.titulo-processamento{
+    color: blue
+}
+.titulo-pronto{
+    color: green;
+}
+
+.task {
+    background-color: #f8f8f8; /* Cor de fundo para a tarefa */
+    margin: 10px; /* Espaçamento em torno de cada tarefa */
+    padding: 15px; /* Espaçamento interno na tarefa */
+    border: 1px solid #ddd; /* Borda para a tarefa */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para efeito 3D */
+    cursor: pointer; /* Muda o cursor para indicar que a tarefa é arrastável */
+}
+
+.task {
+    position: relative; /* Importante para o posicionamento dos botões */
+    /* ... seus outros estilos para .task ... */
+}
+
+.task-buttons {
+    position: absolute;
+    bottom: 10px; /* Ajuste conforme necessário */
+    right: 10px; /* Ajuste conforme necessário */
+    display: flex;
+    gap: 5px;
+}
+
+.task button img {
+    width: 15px; /* Ajuste conforme necessário */
+    height: 15px; /* Ajuste conforme necessário */
+}
+
+.task button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+

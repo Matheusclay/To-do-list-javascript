@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List | Matheus</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="./assets/fonts/fonts.css">
+    
+</head>
+
+<body>
+    <div class="Superior">
+        <h1>Lista de Tarefas </h1>
+        <div class="content">
+            <div class="content-add-item">
+                <input class="input-add" type="text" placeholder="Digite uma tarefa" id="input-new-task">
+                <button  class="button-add" id="btn-add-task">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="20" fill="rgb(255, 255, 255)"
+                        class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-colunas">
+        <div class="coluna Pendente" ondrop="drop(event)" ondragover="allowDrop(event)" >
+            <div class="titulo-coluna titulo-pendente">Pendente</div>
+            <!-- Coluna Pendente -->
+        </div>
+        <div class="coluna processamento" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="titulo-coluna titulo-processamento">Em Processamento</div>
+            <!-- Coluna Em Processamento -->
+        </div>
+        <div class="coluna pronto" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <div class="titulo-coluna titulo-pronto">Pronto</div>
+            <!-- Coluna Pronto -->
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
